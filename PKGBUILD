@@ -76,7 +76,7 @@ lucjanpath=https://raw.githubusercontent.com/sirlucjan/kernel-patches/master/$ma
 
 source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.xz
         ${archlinuxpath}/config
-        5.16.y-bore1.1.26.1.patch
+        5.16.y-bore1.2.27.0.patch
         # Piotr Górski patches
         # Arch patches
         ${lucjanpath}/arch-patches-v5-sep/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
@@ -488,7 +488,7 @@ _package-headers(){
 }
 sha256sums=(8f30c408e0b360def95777edd340b99916f66b27e1fa5121c3368639af0d24d6
             937b8c12653d7b18be9b5673e9fa7fba9512c2b5c947e5d489a5e0749a0a8253
-            f513d8acb2fb40cfa5fd3b04da3fe3d7cd2c2498be1144ebe8d2cc9dddf95f68
+            01f025337fff24c6b929d307c0e1ea82275578046b3c21601ca4f63047af44a1
             29c814d94e9a0277cfd656009bb77df5fb13bb2fedb6f371758d9464eaf6ef96
             a2c15226d6720b8a011f54a09954c0f511cd35a519ee13cc0228a8f803d5e04d
             362cbeb8ee42c34ae635815817a4a6585e422a5ab01d36fe6aa5108a28712ed2
