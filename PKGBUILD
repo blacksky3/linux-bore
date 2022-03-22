@@ -78,7 +78,7 @@ source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.
         5.16.y-bore1.2.27.1.patch
         # Piotr Górski patches
         # Arch patches
-        ${lucjanpath}/arch-patches-sep/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
+        ${lucjanpath}/arch-patches/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch)
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
@@ -481,12 +481,7 @@ _package-headers(){
   ln -sr "$builddir" "$pkgdir/usr/src/$pkgbase"
 }
 
-sha256sums=(cca7d6e053e33f44af1b39f7becec73a387911d81ede5a84ecf671692533138f
+sha256sums=(555fef61dddb591a83d62dd04e252792f9af4ba9ef14683f64840e46fa20b1b1
             937b8c12653d7b18be9b5673e9fa7fba9512c2b5c947e5d489a5e0749a0a8253
             8193fab23e9a7bee8e4c183629cd58183aa58f31f91d866cafcd0f3a4cb3820a
-            29c814d94e9a0277cfd656009bb77df5fb13bb2fedb6f371758d9464eaf6ef96
-            a2c15226d6720b8a011f54a09954c0f511cd35a519ee13cc0228a8f803d5e04d
-            362cbeb8ee42c34ae635815817a4a6585e422a5ab01d36fe6aa5108a28712ed2
-            12947c1f27d1c6b7ec46228f4b71a8eb7b47488e7041015817a9a68ecd451109
-            2c83042bb9e5c2f5851567617d0376a53b14494ed4e085af2a7fa1b0194cd071
-            cb29309136affdc47bd13dfd88e611be15c2b301c9a1320cb597807bafce321a)
+            4bd1bac2959b989af0dae573123b9aff7c609090537e94ee0ae05099cad977b8)
