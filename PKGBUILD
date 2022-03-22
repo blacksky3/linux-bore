@@ -1,4 +1,3 @@
-
 # _     _            _        _          _____
 #| |__ | | __ _  ___| | _____| | ___   _|___ /
 #| '_ \| |/ _` |/ __| |/ / __| |/ / | | | |_ \
@@ -59,7 +58,7 @@ for _p in "${pkgname[@]}"; do
     _package${_p#$pkgbase}
   }"
 done
-pkgver=5.16.15
+pkgver=5.16.16
 pkgrel=1
 major=5.16
 arch=(x86_64)
@@ -71,12 +70,12 @@ if [[ "$_compiler" = "2" ]]; then
 fi
 options=(!strip)
 
-archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/2bb108aed7aee453d94e2684b50125a4b50c0285/trunk
+archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/3b39577d2ed83108724c83c5e91dfced35e68459/trunk
 lucjanpath=https://raw.githubusercontent.com/sirlucjan/kernel-patches/master/$major
 
 source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.xz
         ${archlinuxpath}/config
-        5.16.y-bore1.2.27.0.patch
+        5.16.y-bore1.2.27.1.patch
         # Piotr Górski patches
         # Arch patches
         ${lucjanpath}/arch-patches-v5-sep/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
@@ -486,9 +485,10 @@ _package-headers(){
   mkdir -p "$pkgdir/usr/src"
   ln -sr "$builddir" "$pkgdir/usr/src/$pkgbase"
 }
-sha256sums=(8f30c408e0b360def95777edd340b99916f66b27e1fa5121c3368639af0d24d6
+
+sha256sums=(cca7d6e053e33f44af1b39f7becec73a387911d81ede5a84ecf671692533138f
             937b8c12653d7b18be9b5673e9fa7fba9512c2b5c947e5d489a5e0749a0a8253
-            01f025337fff24c6b929d307c0e1ea82275578046b3c21601ca4f63047af44a1
+            8193fab23e9a7bee8e4c183629cd58183aa58f31f91d866cafcd0f3a4cb3820a
             29c814d94e9a0277cfd656009bb77df5fb13bb2fedb6f371758d9464eaf6ef96
             a2c15226d6720b8a011f54a09954c0f511cd35a519ee13cc0228a8f803d5e04d
             362cbeb8ee42c34ae635815817a4a6585e422a5ab01d36fe6aa5108a28712ed2
