@@ -4,7 +4,7 @@ Linux kernel build for Archlinux with BORE CPU scheduler patch by Masahito Suzuk
 
 # Version
 
-- 5.16.16
+- 5.17
 
 # Build
 
