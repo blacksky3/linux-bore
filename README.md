@@ -1,6 +1,6 @@
 # linux-bore
 
-Linux kernel build for Archlinux with BORE CPU scheduler patch by Masahito Suzuki and Piotr Górski Arch, Block and BLK patches.
+Linux kernel build for Archlinux with BORE CPU scheduler patch by Masahito Suzuki and Piotr Górski Arch and Block patches.
 
 # Version
 
