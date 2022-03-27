@@ -71,7 +71,7 @@ xanmodpath=https://raw.githubusercontent.com/xanmod/linux-patches/master/linux-$
 
 source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.xz
         ${archlinuxpath}/config
-        5.16.y-bore1.2.27.1.patch
+        https://raw.githubusercontent.com/blacksky3/CPU_SCHED/main/5.16/BORE/5.16.y-bore1.2.27.2.patch
         # Piotr Górski patches
         # Arch patches
         ${lucjanpath}/arch-patches/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
@@ -509,7 +509,7 @@ _package-headers(){
 
 sha256sums=(555fef61dddb591a83d62dd04e252792f9af4ba9ef14683f64840e46fa20b1b1
             05381b085c83737922a85fa6f42aa61b3d1400840a7952bf8524726e1d8f74f8
-            8193fab23e9a7bee8e4c183629cd58183aa58f31f91d866cafcd0f3a4cb3820a
+            1d2de42980ee37b3a4facf229c85b0433e96d9ce534ebbc41669e4feb87ffcd8
             4bd1bac2959b989af0dae573123b9aff7c609090537e94ee0ae05099cad977b8
             4d385d6a7f7fd9f9aba19d5c24c24814e1af370ff245c8dc98b03482a27cb257
             a043e4c393395e6ad50d35c973fa0952f5deb109aee8a23103e24297c027641e
