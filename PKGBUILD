@@ -87,8 +87,6 @@ source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.
         ${patchpath}/cpu/0004-Makefile-Turn-off-loop-vectorization-for-GCC-O3-opti.patch
         # CPU Power patches
         ${patchpath}/cpupower/0001-cpupower-update-for-Linux-5.18-rc1.patch
-        # Fast headers
-        ${patchpath}/fast-headers/0001-fast-headers.patch
         # Futex
         ${patchpath}/futex/0001-futex-Add-entry-point-for-FUTEX_WAIT_MULTIPLE-opcode.patch
         # Graysky2 CPU patch
@@ -399,7 +397,7 @@ build(){
 }
 
 _package(){
-  pkgdesc='The Linux kernel and modules with Masahito Suzuki BORE CPU scheduler, Arch, Block, CPU, CPU Power, Futex, Fast Headers and kernel_compiler_patch patch'
+  pkgdesc='The Linux kernel and modules with Masahito Suzuki BORE CPU scheduler, Arch, Block, CPU, CPU Power, Futex and kernel_compiler_patch patch'
   depends=(coreutils kmod initramfs)
   optdepends=('crda: to set the correct wireless channels of your country'
               'linux-firmware: firmware images needed for some devices')
@@ -527,6 +525,5 @@ sha256sums=('7cd5c5d432a25f45060868ce6a8578890e550158a2f779c4a20804b551e84c24'
             '74546291433f8e79c9c960075edbd7974d715818b1be6c982308adf93e9e9c4f'
             '7bf85364c3876a648b542ba5a5ada801181183b29366408ef2b2971edab0bd4c'
             '05715dd3a05812c3a1185ca6831c8bd38cee3352dab343717ed77b49b4b527c0'
-            '9baa40f901f2b8a9630377c2955a998afa3758bea2ebca3f26ca32ee2b57bbd5'
             '5f6906d9f8c1bd9b30486eba07f2c03ca1849cc5c6a990127ebd81c6e105ac45'
             'dea86a521603414a8c7bf9cf1f41090d5d6f8035ce31407449e25964befb1e50')
