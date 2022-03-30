@@ -1,6 +1,6 @@
 # linux-bore
 
-Linux kernel build for Archlinux with Masahito Suzuki BORE CPU scheduler, Arch, Block, CPU, CPU Power, Futex and kernel_compiler_patch patch.
+Linux kernel build for Archlinux with Masahito Suzuki BORE CPU scheduler, Arch, Block, CPU, CPU Power, Futex, Wine and kernel_compiler_patch patch.
 
 # Version
 
@@ -11,7 +11,7 @@ Linux kernel build for Archlinux with Masahito Suzuki BORE CPU scheduler, Arch, 
     git clone https://github.com/blacksky3/linux-bore.git
     cd linux-bore
     env_compiler=(1 or 2) makepkg -s
-    
+
 # Build variables
 
 ### _compiler
@@ -32,7 +32,7 @@ You can add this repo to your pacman.conf
     [kernel]
     SigLevel = Optional TrustAll
     Server = https://www.blacksky3.com/$arch/$repo
-    
+
 # CPU Scheduler
 
 ## BORE (Burst-Oriented Response Enhancer) CPU Scheduler
