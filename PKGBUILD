@@ -54,7 +54,7 @@ for _p in "${pkgname[@]}"; do
   }"
 done
 pkgver=5.17.3
-pkgrel=1
+pkgrel=2
 major=5.17
 arch=(x86_64)
 url='https://www.kernel.org/'
@@ -83,7 +83,7 @@ source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.
         #${patchpath}/arch/0007-x86-speculation-Restore-speculation-related-MSRs-dur.patch
         #${patchpath}/arch/0008-Reinstate-some-of-swiotlb-rework-fix-info-leak-with-.patch
         #${patchpath}/arch/0009-Revert-ACPI-processor-idle-Only-flush-cache-on-enter.patch
-        ${patchpath}/arch/0010-gpio-Restrict-usage-of-GPIO-chip-irq-members-before-.patch
+        #${patchpath}/arch/0010-gpio-Restrict-usage-of-GPIO-chip-irq-members-before-.patch
         ${patchpath}/arch/0011-gpio-Request-interrupts-after-IRQ-is-initialized.patch
         # Block patches. Set BFQ as default
         ${patchpath}/block/0001-block-Kconfig.iosched-set-default-value-of-IOSCHED_B.patch
@@ -536,7 +536,6 @@ sha256sums=('32d0a8e366b87e1cbde951b9f7a01287546670ba60fac35cccfc8a7c005a162c'
             'e53a474ac6dc512a62b1a5774669e6ff460a2e2035d102b84d3ebeb389602f3e'
             'cfe8ba859263ce4b4575130be28865666cef0132600e52fbad4af50842b15bf0'
             'fd836fbbce8128fa568067cf6974a0bf4225ebdf844c8d396081a9bc3cb53180'
-            '53cc33d00d45e7dfd9ede443ec1fa9bce5fa8237fcc5ca1bf16886cff071cd1e'
             'ee8bae1854a138c0aa29a829587a25a4f5e24cb92581c51134b3062cf551222f'
             '4d385d6a7f7fd9f9aba19d5c24c24814e1af370ff245c8dc98b03482a27cb257'
             'a043e4c393395e6ad50d35c973fa0952f5deb109aee8a23103e24297c027641e'
