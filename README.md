@@ -4,7 +4,7 @@ Linux kernel build for Archlinux with Masahito Suzuki BORE CPU scheduler, Arch, 
 
 # Version
 
-- 5.17.6
+- 5.17.7
 
 # Build
 
