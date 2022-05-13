@@ -72,6 +72,7 @@ source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.
         ${archlinuxpath}/config
         # BORE patch
         https://raw.githubusercontent.com/blacksky3/patches/main/5.16/bore/5.16.y-bore1.2.28.0.patch
+        https://raw.githubusercontent.com/blacksky3/patches/main/5.16/bore/0001-peterz-sched-patches-2-3-8.patch
         # Arch patches
         ${patchpath}/arch/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
         ${patchpath}/arch/0001-random-treat-bootloader-trust-toggle-the-same-way-as.patch
@@ -531,6 +532,7 @@ _package-headers(){
 sha256sums=('22f67ef6b12ef6c0c0353be4b90b4bf4b9b18b858c16c346fa495b67ec718c99'
             'fb37785c43d90085ab4e7d7cee522cb8232713b6c601d74cfc7234eeaeb1e6b5'
             '9bcdb1bff0acc3ed43c985fb04e5df01aff17d16bdc4686e0daae0d7326230be'
+            '3f111654dcf4fe65a73d252903bdbdf28ca8aec1931277cebefdcbee530f042d'
             '4bd1bac2959b989af0dae573123b9aff7c609090537e94ee0ae05099cad977b8'
             '556db0cd181ceee90eeede40faa6306082cfcdebdc15fe6e286e78d21d631af3'
             '9afe31f7c9ae3660d39e71613b7b1a78f1cfa8af97db2b71b360348a365f403a'
