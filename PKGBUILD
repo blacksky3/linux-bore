@@ -53,7 +53,7 @@ for _p in "${pkgname[@]}"; do
     _package${_p#$pkgbase}
   }"
 done
-pkgver=5.17.7
+pkgver=5.17.9
 pkgrel=1
 major=5.17
 arch=(x86_64)
@@ -65,14 +65,14 @@ if [[ "$_compiler" = "2" ]]; then
 fi
 options=(!strip)
 
-archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/d74d6d98d884285f2ca0aea4c598a83dd64a4b72/trunk
+archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/c0019a07879d922a9dcce49c27431902e4f4b783/trunk
 patchpath=https://raw.githubusercontent.com/blacksky3/patches/main/$major
 
 source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.xz
         ${archlinuxpath}/config
         # BORE patch
-        https://raw.githubusercontent.com/blacksky3/patches/main/5.16/bore/5.16.y-bore1.2.28.0.patch
-        https://raw.githubusercontent.com/blacksky3/patches/main/5.16/bore/0001-peterz-sched-patches-2-3-8.patch
+        ${patchpath}/bore/0001-5.17.y-bore1.3.30.0.patch
+        ${patchpath}/bore/0001-peterz-sched-patches-2-3-8.patch
         # Arch patches
         ${patchpath}/arch/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch
         ${patchpath}/arch/0001-random-treat-bootloader-trust-toggle-the-same-way-as.patch
@@ -529,9 +529,9 @@ _package-headers(){
   ln -sr "$builddir" "$pkgdir/usr/src/$pkgbase"
 }
 
-sha256sums=('22f67ef6b12ef6c0c0353be4b90b4bf4b9b18b858c16c346fa495b67ec718c99'
+sha256sums=('172424bc41ef2df9b19457ceb022b56a51eb9497529b15ce7e9b8d6f90ad5978'
             'fb37785c43d90085ab4e7d7cee522cb8232713b6c601d74cfc7234eeaeb1e6b5'
-            '9bcdb1bff0acc3ed43c985fb04e5df01aff17d16bdc4686e0daae0d7326230be'
+            '9cb54fc04618089a68f615aba77c93d9cd6fe73b1a24154279fbb8bd7eba9bbf'
             '3f111654dcf4fe65a73d252903bdbdf28ca8aec1931277cebefdcbee530f042d'
             '4bd1bac2959b989af0dae573123b9aff7c609090537e94ee0ae05099cad977b8'
             '556db0cd181ceee90eeede40faa6306082cfcdebdc15fe6e286e78d21d631af3'
