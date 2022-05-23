@@ -91,7 +91,7 @@ source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.
         # Futex
         ${patchpath}/futex/0001-futex-Add-entry-point-for-FUTEX_WAIT_MULTIPLE-opcode.patch
         # Wine
-        ${patchpath}/wine/0007-v5.18-winesync.patch
+        ${patchpath}/wine/0007-v5.18-winesync-v3.patch
         # Graysky2 CPU patch
         https://raw.githubusercontent.com/graysky2/kernel_compiler_patch/master/more-uarches-for-kernel-5.17+.patch)
 
