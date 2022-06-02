@@ -9,7 +9,7 @@ Linux kernel build for Archlinux with Masahito Suzuki BORE CPU scheduler, AMD, A
 # Build
 
     git clone https://github.com/blacksky3/linux-bore.git
-    cd linux-bore
+    cd linux-bore/5.18
     env_compiler=(1 or 2) makepkg -s
 
 # Build variables
