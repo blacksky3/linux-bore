@@ -71,8 +71,8 @@ patchpath=https://raw.githubusercontent.com/blacksky3/patches/main/$major
 source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.xz
         ${archlinuxpath}/config
         # BORE patch
-        https://raw.githubusercontent.com/blacksky3/patches/main/5.17/bore/0001-5.17.y-bore1.3.30.0.patch
-        https://raw.githubusercontent.com/blacksky3/patches/main/5.17/bore/0001-peterz-sched-patches-2-3-8.patch
+        ${patchpath}/bore/0001-bore1.3.30.1.patch
+        ${patchpath}/bore/0001-peterz-sched-patches-2-3-8.patch
         # AMD patches
         ${patchpath}/amd/0001-amd-patches-v1.patch
         # Arch patches
@@ -525,7 +525,7 @@ _package-headers(){
 
 sha256sums=('83d14126c660186a7a1774a4a5c29d38e170fa5e52cfd2d08fd344dcf1f57d22'
             '5e34f17f45b3623bd8350b4d2c23ad7525b75c327cc49ec3dc37e3ee168d2f46'
-            '9cb54fc04618089a68f615aba77c93d9cd6fe73b1a24154279fbb8bd7eba9bbf'
+            '4ad6f3aedcf2b39d7e44b7f03639e0afee8267ea256192a0555dd973f09400a9'
             '3f111654dcf4fe65a73d252903bdbdf28ca8aec1931277cebefdcbee530f042d'
             '9824cd3a41db040bf28d6538aa4805f869333139cbcf43e0422e1b42f5401270'
             '4bd1bac2959b989af0dae573123b9aff7c609090537e94ee0ae05099cad977b8'
