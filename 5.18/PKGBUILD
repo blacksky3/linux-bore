@@ -53,7 +53,7 @@ for _p in "${pkgname[@]}"; do
     _package${_p#$pkgbase}
   }"
 done
-pkgver=5.18.2
+pkgver=5.18.3
 pkgrel=1
 major=5.18
 arch=(x86_64)
@@ -65,13 +65,13 @@ if [[ "$_compiler" = "2" ]]; then
 fi
 options=(!strip)
 
-archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/77ce45ab19f738f88c0d218507347a2ee47d325d/trunk
+archlinuxpath=https://raw.githubusercontent.com/archlinux/svntogit-packages/b4cfe6ae8029f4d58b72a8565ea95ddfcd43c0df/trunk
 patchpath=https://raw.githubusercontent.com/blacksky3/patches/main/$major
 
 source=(https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-$pkgver.tar.xz
         ${archlinuxpath}/config
         # BORE patch
-        https://raw.githubusercontent.com/blacksky3/patches/main/bore/0001-bore1.3.30.3.patch
+        https://raw.githubusercontent.com/blacksky3/patches/main/bore/0001-bore1.4.31.0.patch
         https://raw.githubusercontent.com/blacksky3/patches/main/bore/0001-peterz-sched-patches-2-3-8.patch
         https://raw.githubusercontent.com/blacksky3/patches/main/bore/0001-tianchen-ding-wakeup-patches.patch
         # AMD patches
@@ -524,9 +524,9 @@ _package-headers(){
   ln -sr "$builddir" "$pkgdir/usr/src/$pkgbase"
 }
 
-sha256sums=('ef9ff2dfa5416a03e7e5fd9c308aaec385fe8ff9f4a62d957b167843849659a2'
-            '5e34f17f45b3623bd8350b4d2c23ad7525b75c327cc49ec3dc37e3ee168d2f46'
-            'c1fb6ed0200c3d3ea0aa74ea8aacea5648f96c28fb594b2cd38fc323608321cf'
+sha256sums=('c70cb405076c3cfd73e4de729430b0342ea21b92a04d8284a03fac664ef1cfea'
+            '9f4fda38f1c59f7a20a76eff48a0cb302cb0e8e55bda53ec0f1807e10dcdad3a'
+            '7a36fe0a53a644ade0ce85f08f9ca2ebaddd47876966b7cc9d4cae8844649271'
             '3f111654dcf4fe65a73d252903bdbdf28ca8aec1931277cebefdcbee530f042d'
             '3979e8104d0e5c92e8988d7c8e6e1ff647f6097b0154ae18597f630e304b7889'
             '9824cd3a41db040bf28d6538aa4805f869333139cbcf43e0422e1b42f5401270'
