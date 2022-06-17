@@ -1,6 +1,6 @@
 # linux-bore
 
-Linux kernel build for Archlinux with Masahito Suzuki BORE CPU scheduler, AMD, Arch, Block, CPU, BTRFS, Futex, Wine and kernel_compiler_patch patch.
+Linux kernel build for Archlinux with Masahito Suzuki BORE CPU scheduler, AMD, Arch, Block, Clearlinux, CPU, BTRFS, Futex, Wine and kernel_compiler_patch patch.
 
 # Version
 

@@ -413,7 +413,7 @@ build(){
 }
 
 _package(){
-  pkgdesc='The Linux kernel and modules with Masahito Suzuki BORE CPU scheduler, AMD, Arch, Block, CPU, BTRFS, Futex, Wine and kernel_compiler_patch patch'
+  pkgdesc='The Linux kernel and modules with Masahito Suzuki BORE CPU scheduler, AMD, Arch, Block, Clearlinux, CPU, BTRFS, Futex, Wine and kernel_compiler_patch patch'
   depends=(coreutils kmod initramfs)
   optdepends=('wireless-regdb: to set the correct wireless channels of your country'
               'linux-firmware: firmware images needed for some devices')
