@@ -4,7 +4,7 @@ Linux kernel build for Archlinux with Masahito Suzuki BORE CPU scheduler, AMD, A
 
 # Version
 
-- 5.18.6
+- 5.18.7
 
 # Build
 
